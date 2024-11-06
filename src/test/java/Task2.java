@@ -6,6 +6,7 @@ public class Task2 {
         List<String> words = Arrays.asList("dog", "cat", "elephant", "tiger", "lion", "ant");
 
         List<String> uppercase = words.stream().map(String::toUpperCase).toList();
+                                                 //(item -> item.toUpperCase())
 
         for (String item : uppercase){
             System.out.println(item);
